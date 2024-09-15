@@ -1,38 +1,125 @@
-.App {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(setpa/gif.gif);
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+
+.App {  
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #98498e;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.about-me {
+  color: white; 
+  background-color: #c85a5a;
+  padding: 20px;
+  border-radius: 8px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.about-me h2,
+.about-me p {
+  color: white; 
+}
+
+.contact-me {
+  color: white; 
+  background-color: #c85a5a;
+  padding: 20px;
+  border-radius: 8px; 
+}
+
+.contact-me h2,
+.about-me p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.references {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #c85a5a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+
+.project-item {
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+ background-color: #e87b7b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
